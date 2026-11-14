@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bright Nest Home Cleaning | Get an Instant Quote | Concept by WHOISWOLK</title>
+<meta name="description" content="Concept landing page for a home cleaning service, built by WHOISWOLK: an instant price estimator, clear packages and one booking goal.">
+<style>
+:root{--ink:#14302b;--muted:#4f6b66;--paper:#f8fbfa;--card:#ffffff;--accent:#0f766e;--accent-2:#f59e0b;--accent-ink:#ffffff;--line:#d7e6e3}
+@media (prefers-color-scheme:dark){:root{--ink:#e6f2ef;--muted:#9fbbb5;--paper:#0e1716;--card:#15211f;--accent:#2dd4bf;--accent-2:#fbbf24;--accent-ink:#04201c;--line:#24413c}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding:16px 20px}
+.logo{font-weight:800;font-size:1.15rem}.logo b{color:var(--accent)}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;margin-left:18px}
+.hero{text-align:center;padding:60px 20px 30px}
+.pill{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.85rem;color:var(--muted)}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin:18px auto 14px;max-width:16em}
+.lede{color:var(--muted);font-size:1.1rem;max-width:36em;margin:0 auto}
+.estimator{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;max-width:640px;margin:34px auto 0;text-align:left;display:grid;gap:16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:.85rem;font-weight:600;display:grid;gap:6px}
+select{font:inherit;padding:11px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+.price{display:flex;justify-content:space-between;align-items:center;border-top:1px dashed var(--line);padding-top:16px}
+.price strong{font-size:2rem;color:var(--accent)}
+.btn{display:inline-block;font:inherit;font-weight:700;background:var(--accent);color:var(--accent-ink);border:0;border-radius:10px;padding:13px 20px;text-decoration:none;cursor:pointer}
+.plans{padding:60px 0}
+.plans h2,.faq h2{text-align:center;font-size:1.7rem;margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.plan.best{border:2px solid var(--accent);position:relative}
+.plan.best::before{content:"Most popular";position:absolute;top:-12px;left:20px;background:var(--accent-2);color:#1f1300;font-size:.75rem;font-weight:800;padding:3px 10px;border-radius:999px}
+.plan h3{margin-bottom:6px}.plan p{color:var(--muted);font-size:.95rem}
+.plan ul{list-style:none;margin-top:12px;display:grid;gap:6px;font-size:.95rem}
+.plan li::before{content:"\2022";color:var(--accent);margin-right:8px}
+.faq{padding:0 0 60px}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 auto 10px;max-width:720px}
+summary{font-weight:700;cursor:pointer}details p{color:var(--muted);margin-top:8px}
+.band{background:var(--accent);color:var(--accent-ink);text-align:center;padding:46px 20px}
+.band .btn{background:var(--accent-ink);color:var(--accent);margin-top:14px}
+footer{text-align:center;color:var(--muted);font-size:.82rem;padding:24px 20px}footer a{color:inherit}
+@media (max-width:780px){.grid,.row{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="logo">Bright<b>Nest</b> Cleaning</div><nav><a href="#plans">Plans</a><a href="#faq">FAQ</a><a href="#quote">Get a quote</a></nav></div></header>
+<main>
+<section class="hero" id="quote">
+<span class="pill">Insured cleaners &middot; Supplies included</span>
+<h1>A spotless home without giving up your weekend.</h1>
+<p class="lede">See your price in seconds, pick a time online, and come home to a clean house. Same trusted cleaner every visit.</p>
+<div class="estimator">
+<div class="row">
+<label>Bedrooms<select id="beds"><option value="0">Studio</option><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4+</option></select></label>
+<label>Bathrooms<select id="baths"><option value="1" selected>1</option><option value="2">2</option><option value="3">3+</option></select></label>
+</div>
+<label>Type of clean<select id="type"><option value="1">Standard clean</option><option value="1.6">Deep clean</option><option value="1.9">Move-in / move-out</option></select></label>
+<div class="price"><span>Estimated price</span><strong id="total">$0</strong></div>
+<a class="btn" href="#plans">Book this clean</a>
+</div>
+</section>
+<section class="plans wrap" id="plans"><h2>Pick how often</h2><div class="grid">
+<div class="plan"><h3>One-time</h3><p>Perfect before guests or after a busy month.</p><ul><li>Full kitchen and bath clean</li><li>Dusting and floors throughout</li></ul></div>
+<div class="plan best"><h3>Every 2 weeks</h3><p>Save 15% and keep things under control.</p><ul><li>Same cleaner each visit</li><li>Priority scheduling</li><li>Skip or reschedule anytime</li></ul></div>
+<div class="plan"><h3>Monthly</h3><p>A reset once a month, save 10%.</p><ul><li>Rotating deep-clean task</li><li>Flexible dates</li></ul></div>
+</div></section>
+<section class="faq" id="faq"><h2>Questions</h2>
+<details><summary>Do I need to be home?</summary><p>No. Many customers leave a key or door code. You'll get a text when your cleaner arrives and leaves.</p></details>
+<details><summary>What if I'm not happy?</summary><p>Tell us within 24 hours and we'll come back to re-clean the missed areas for free.</p></details>
+<details><summary>Can I cancel a recurring plan?</summary><p>Yes, anytime, with no fees. Just give 48 hours' notice before your next visit.</p></details>
+</section>
+<section class="band"><h2>Ready for your first clean?</h2><p>Get your price above in under 30 seconds.</p><a class="btn" href="#quote">See my price</a></section>
+</main>
+<footer>Concept landing page designed and built by <a href="https://www.whoiswolk.one">WHOISWOLK</a>. Bright Nest Home Cleaning is a fictional business; prices are illustrative.</footer>
+<script>
+const f=(id)=>document.getElementById(id);
+function calc(){const beds=+f('beds').value,baths=+f('baths').value,mult=+f('type').value;const base=90+beds*25+(baths-1)*20;f('total').textContent='$'+Math.round(base*mult);}
+['beds','baths','type'].forEach(id=>f(id).addEventListener('change',calc));calc();
+</script>
+</body>
+</html>
+
