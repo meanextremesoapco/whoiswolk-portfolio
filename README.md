@@ -1,6 +1,6 @@
 # William Wolk – Web Developer
 
-Freelance web developer based in the Philadelphia area, working fully remote. I build Shopify stores, landing pages and brand assets for small businesses, and I co-own and run a live Shopify brand, Mean Extreme Soap Co.
+Freelance web developer based in the Philadelphia area, working fully remote. I build Shopify stores, landing pages and brand assets for small businesses, and I developed the website for a live Shopify brand, Mean Extreme Soap Co.
 
 ## Services
 
@@ -15,7 +15,7 @@ Freelance web developer based in the Philadelphia area, working fully remote. I 
 
 ## Live work
 
-- **Mean Extreme Soap Co.** – Shopify store I co-own and run: [meanextremesoapco.com](https://meanextremesoapco.com)
+- **Mean Extreme Soap Co.** – Shopify store whose website I developed: [meanextremesoapco.com](https://meanextremesoapco.com)
 - **WHOISWOLK** – my service site: [whoiswolk.one](https://www.whoiswolk.one)
 
 ## Skills
