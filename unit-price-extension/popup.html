@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Unit Price Check</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<h1>Unit Price Check</h1>
+<p class="sub">Which one is the better deal?</p>
+<form id="f">
+  <fieldset>
+    <legend>Item A</legend>
+    <label>Price ($)<input id="pa" type="number" min="0" step="0.01" inputmode="decimal"></label>
+    <label>Size<input id="qa" type="number" min="0" step="any" inputmode="decimal"></label>
+  </fieldset>
+  <fieldset>
+    <legend>Item B</legend>
+    <label>Price ($)<input id="pb" type="number" min="0" step="0.01" inputmode="decimal"></label>
+    <label>Size<input id="qb" type="number" min="0" step="any" inputmode="decimal"></label>
+  </fieldset>
+  <label class="unit">Unit name<input id="unit" type="text" value="oz" maxlength="10"></label>
+</form>
+<div id="out" role="status" aria-live="polite">Enter a price and size for both items.</div>
+<script src="popup.js"></script>
+</body>
+</html>
